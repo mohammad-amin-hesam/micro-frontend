@@ -1,7 +1,7 @@
 import { mount } from "marketing/MarketingApp";
 import React, { useRef, useEffect } from "react";
 
-export default () => {
+const MarketingApp = () => {
 	const ref = useRef(null);
 
 	useEffect(() => {
@@ -10,3 +10,5 @@ export default () => {
 
 	return <div ref={ref}></div>;
 };
+
+export default MarketingApp;
